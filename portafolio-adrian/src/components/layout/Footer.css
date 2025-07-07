@@ -2,12 +2,37 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   gap: 10px;
   background-color: #000;
 
-  p {
+  p,
+  h2 {
     color: #fff;
     font-family: "Roboto", sans-serif;
     font-weight: 900;
+  }
+
+  .icon-row {
+    display: flex;
+    gap: 10px;
+  }
+
+  .icon-row {
+    display: flex;
+    justify-content: left;
+    gap: 15px;
+    margin-bottom: 10px;
+  }
+
+  .icon-row a {
+    color: #fff;
+    font-size: 24px;
+    transition: transform 0.2s ease;
+  }
+
+  .icon-row a:hover {
+    transform: scale(1.1);
+    color: #00aced; /* Cambia el color al hacer hover */
   }
 }
