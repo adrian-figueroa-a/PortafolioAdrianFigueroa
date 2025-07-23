@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../pages/Inicio.css";
 import Tools from "../layout/Tools";
 import About from "../layout/About";
-import Modal from "../layout/modal";
+import Modal from "../layout/Modal";
 import {
   FaGithub,
   FaLinkedin,
