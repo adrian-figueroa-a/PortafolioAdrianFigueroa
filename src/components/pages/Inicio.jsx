@@ -18,6 +18,21 @@ export default function Inicio() {
   return (
     <section className="containerIndex">
       <div className="icon-row">
+        <button
+          onClick={() => setModalSobreMiOpen(true)}
+          className="icon-item nav-link"
+        >
+          <FaLaughBeam />
+          <p>Sobre mí</p>
+        </button>
+
+        <button
+          onClick={() => setModalHerramientasOpen(true)}
+          className="icon-item nav-link"
+        >
+          <FaDev />
+          <p>Herramientas</p>
+        </button>
         <a
           href="https://www.linkedin.com/in/adrian-figueroa-almonacid/"
           target="_blank"
@@ -44,21 +59,6 @@ export default function Inicio() {
           <FaGithub />
           <p>GitHub</p>
         </a>
-        <button
-          onClick={() => setModalSobreMiOpen(true)}
-          className="icon-item nav-link"
-        >
-          <FaLaughBeam />
-          <p>Sobre mí</p>
-        </button>
-
-        <button
-          onClick={() => setModalHerramientasOpen(true)}
-          className="icon-item nav-link"
-        >
-          <FaDev />
-          <p>Herramientas</p>
-        </button>
       </div>
 
       <Modal
