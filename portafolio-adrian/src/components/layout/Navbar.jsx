@@ -1,18 +1,18 @@
 import React from "react";
-import { NavLink, useLocation } from "react-router-dom";
+// import { NavLink, useLocation } from "react-router-dom";
 import "../layout/Navbar.css";
 
 export const Navbar = () => {
-  const location = useLocation();
+  // const location = useLocation();
 
-  const isActive = (path) => location.pathname === path;
+  // const isActive = (path) => location.pathname === path;
 
   return (
     <nav className="navbar">
       <div>
-        <h1>Adrián Figueroa</h1>
+        <h1>Portafolio Adrián Figueroa</h1>
       </div>
-
+      {/* 
       <div className={isActive("/Inicio") ? "nav-item active" : "nav-item"}>
         <NavLink to="/Inicio" className="nav-link">
           <p>Inicio</p>
@@ -27,7 +27,7 @@ export const Navbar = () => {
 
       <div className="nav-item">
         <p>Proyectos</p>
-      </div>
+      </div> */}
     </nav>
   );
 };

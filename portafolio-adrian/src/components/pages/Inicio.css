@@ -1,55 +1,46 @@
 .containerIndex {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   max-width: 1200px;
   margin: auto;
   gap: 20px;
   padding: 30px;
-  align-items: center;
-
-  .principalPicture {
-    img {
-      width: 80%;
-      border-radius: 50%;
-      border: solid 2px aqua;
-    }
-  }
 
   .icon-row {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
     justify-content: left;
     gap: 15px;
     margin-bottom: 10px;
-  }
 
-  .icon-row a {
-    color: #000;
-    font-size: 1.5em;
-    transition: transform 0.2s ease;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-decoration: none;
-  }
+    .icon-item {
+      color: #000;
+      font-size: 2em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      background: none;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+      transition: transform 0.2s ease, color 0.2s ease;
 
-  .icon-row a:hover {
-    transform: scale(1.1);
-    color: #00aced;
+      &:hover {
+        transform: scale(1.1);
+        color: #00aced;
+      }
+    }
   }
 
   @media (max-width: 768px) {
-    grid-template-columns: 1fr;
     padding: 10px;
-
-    .principalPicture {
-      img {
-        width: 100%;
-      }
-    }
 
     .icon-row {
       justify-content: center;
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 }

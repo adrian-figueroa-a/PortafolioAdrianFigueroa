@@ -1,10 +1,13 @@
 import React from "react";
-import "../pages/About.css";
-import { FaGithub, FaLinkedin, FaEnvelope} from "react-icons/fa";
+import "../layout/About.css";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 export default function about() {
   return (
     <section className="containerAbout">
+      <div className="principalPicture">
+        <img src="/img/foto-perfil.jpeg" alt="imagen adrian" />
+      </div>
       <div className="personalDescription">
         <h1>Adrián Figueroa</h1>
         <h2>Desarrollador Front end</h2>
@@ -39,8 +42,6 @@ export default function about() {
           >
             <FaLinkedin />
           </a>
-
-
         </div>
       </div>
     </section>

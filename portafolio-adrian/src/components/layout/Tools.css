@@ -1,0 +1,19 @@
+.container-tools {
+  text-align: center;
+  .tools-icons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    gap: 20px;
+
+    p {
+      font-weight: 700;
+    }
+    svg {
+      width: 2em;
+      height: 2em;
+    }
+  }
+}

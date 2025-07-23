@@ -1,0 +1,62 @@
+.containerAbout {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+
+  .principalPicture {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    img {
+      width: 50%;
+      border-radius: 50%;
+      border: solid 2px aqua;
+    }
+  }
+
+  .personalDescription {
+    .icon-row {
+      display: flex;
+      justify-content: left;
+      gap: 15px;
+      margin-bottom: 10px;
+    }
+
+    .icon-row a {
+      color: #000;
+      font-size: 24px;
+      transition: transform 0.2s ease;
+    }
+
+    .icon-row a:hover {
+      transform: scale(1.1);
+      color: #00aced;
+    }
+
+    h1,
+    h2 {
+      text-align: center;
+    }
+    p {
+      text-align: justify;
+      padding: 10px;
+    }
+
+    .icon-row {
+      justify-content: center;
+    }
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    padding: 10px;
+
+    .principalPicture {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
